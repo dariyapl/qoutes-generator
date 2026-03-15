@@ -1,171 +1,221 @@
-.card{
-    width: 50%;
+.card {
+    width: 90%;
     max-width: 600px;
     min-height: 20rem;
     background-color: aliceblue;
     display: flex;
     border-radius: 15px;
-    justify-self: center;
-    margin-top: 8rem;
+    margin: 8rem auto 2rem auto;
     flex-direction: column;
-    padding: 1rem;
+    padding: 2rem;
+    box-sizing: border-box;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.card-header{
+
+.card-header {
     font-size: 2rem;
     width: 100%;
-    margin: 1rem;
+    margin: 0 0 1.5rem 0;
     text-align: center;
-
-}
-@media (max-width: 768px){
-
-    .card{
-        width: 80%;
-        margin-top: 4rem;
-    }
-
-    .card-header{
-        font-size: 1.6rem;
-    }
-
-    .quote{
-        font-size: 1.1rem;
-    }
-
-    .author{
-        margin-top: 2rem;
-    }
-
+    font-weight: bold;
 }
 
-.card-body{
+.card-body {
     display: flex;
-    flex:1;
+    flex: 1;
     flex-direction: column;
     justify-content: center;
     width: 100%;
     margin: 0;
 }
-.quote{
+
+.quote {
     text-align: center;
     width: 100%;
-    padding: 0 1rem;
-    margin-bottom:1rem ;
-    font-size: 1.2rem;
-    line-height: 1.5;
+    padding: 0;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    word-wrap: break-word;
 }
-.author{
-    justify-content: right;
-    font-style:italic;
-    margin-top: 3rem;
+
+.author {
     text-align: right;
+    font-style: italic;
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    width: 100%;
+    padding-right: 0.5rem;
 }
-#newQoutBtn{
-    outline: none;
-    width: 8rem;
-    height: 4rem;
-    font-size: 1.2rem;
-    border-radius: 15px;
-    align-items: center;
-    justify-content: center;
-    background-color: aliceblue;
-    display: inline-block;
-    align-self: center;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    border: 0.5px solid #c5c5c5;
-    box-shadow: 1px 1px 8px #c5c5c5;
 
-
-}
-.newQoute-btn{
+.newQoute-btn {
     display: flex;
     justify-content: center;
     margin-top: 2rem;
-
+    width: 100%;
 }
-#newQoutBtn:hover{
+
+#newQoutBtn {
+    outline: none;
+    width: 10rem;
+    height: 3.5rem;
+    font-size: 1.2rem;
+    border-radius: 15px;
     background-color: aliceblue;
+    border: 0.5px solid #c5c5c5;
+    box-shadow: 1px 1px 8px #c5c5c5;
     cursor: pointer;
-    transform: scale(1.1);
-
+    transition: all 0.3s ease;
+    margin: 0 auto;
 }
-.ErrorMassage{
+
+#newQoutBtn:hover {
+    background-color: #e6f0ff;
+    transform: scale(1.05);
+    box-shadow: 2px 2px 12px #b0b0b0;
+}
+
+/* Error Message Styles */
+.ErrorMassage {
     text-align: center;
-    width: 20rem;
-    height: 10rem;
-    padding: 0 1rem;
+    width: 90%;
+    max-width: 20rem;
+    min-height: 10rem;
+    padding: 1.5rem;
     background-color: #b9d7ff;
     border-radius: 15px;
-    border: 0.5px;
-    box-shadow: 1px 0.5px 0.5px #a8a8a8;
+    border: 0.5px solid #a8a8a8;
+    box-shadow: 1px 1px 5px #a8a8a8;
     display: flex;
     flex-direction: column;
-
+    margin: 2rem auto;
+    box-sizing: border-box;
 }
-.header{
+
+.header {
     text-align: center;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
-    padding: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 0.5rem 0;
 }
-.message{
+
+.message {
     text-align: center;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
-    padding: 1rem;
+    font-size: 1.1rem;
+    padding: 1rem 0;
+    word-wrap: break-word;
 }
 
-.loader-text{
-  text-align: center;
-
+/* Loader Styles */
+.loader-text {
+    text-align: center;
+    margin-top: 1rem;
 }
-.loader{
-    border: 16px solid rgba(172, 172, 172, 0.91);
-    border-top: 16px solid rgba(166, 183, 255, 0.73);
+
+.loader {
+    border: 16px solid rgba(172, 172, 172, 0.3);
+    border-top: 16px solid rgba(106, 131, 255, 0.8);
     border-radius: 50%;
     width: 6rem;
     height: 6rem;
     animation: spin 2s linear infinite;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
+    margin: 2rem auto;
 }
 
 @keyframes spin {
-0% { transform: rotate(0deg); }
+    0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
-@media (max-width: 480px){
 
-    .card{
-        width: 90%;
-        margin-top: 2rem;
-        padding: 1rem;
+/* Media Queries */
+@media (max-width: 768px) {
+    .card {
+        width: 85%;
+        margin: 6rem auto 2rem auto;
+        padding: 1.5rem;
     }
 
-    .card-header{
-        font-size: 1.3rem;
+    .card-header {
+        font-size: 1.8rem;
+        margin-bottom: 1.2rem;
     }
 
-    .quote{
+    .quote {
+        font-size: 1.2rem;
+    }
+
+    .author {
+        margin-top: 1.2rem;
         font-size: 1rem;
-        padding: 0;
     }
 
-    .author{
-        font-size: 0.9rem;
+    #newQoutBtn {
+        width: 9rem;
+        height: 3.2rem;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 92%;
+        margin: 4rem auto 1.5rem auto;
+        padding: 1.2rem;
     }
 
-    #newQoutBtn{
-        width: 7rem;
+    .card-header {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .quote {
+        font-size: 1.1rem;
+        line-height: 1.5;
+    }
+
+    .author {
+        font-size: 0.95rem;
+        margin-top: 1rem;
+    }
+
+    #newQoutBtn {
+        width: 8rem;
         height: 3rem;
         font-size: 1rem;
     }
+}
 
+/* Додаткова підтримка для дуже малих екранів */
+@media (max-width: 360px) {
+    .card {
+        width: 95%;
+        padding: 1rem;
+        margin: 3rem auto 1rem auto;
+    }
+
+    .card-header {
+        font-size: 1.3rem;
+    }
+
+    .quote {
+        font-size: 1rem;
+    }
+
+    .author {
+        font-size: 0.9rem;
+    }
+
+    #newQoutBtn {
+        width: 7rem;
+        height: 2.8rem;
+        font-size: 0.95rem;
+    }
 }
