@@ -1,14 +1,14 @@
 .card{
     width: 50%;
+    max-width: 600px;
+    min-height: 20rem;
     background-color: aliceblue;
-    height: 20rem;
     display: flex;
     border-radius: 15px;
     justify-self: center;
-    margin-top:8rem;
+    margin-top: 8rem;
     flex-direction: column;
     padding: 1rem;
-
 }
 .card-header{
     font-size: 2rem;
@@ -17,7 +17,26 @@
     text-align: center;
 
 }
+@media (max-width: 768px){
 
+    .card{
+        width: 80%;
+        margin-top: 4rem;
+    }
+
+    .card-header{
+        font-size: 1.6rem;
+    }
+
+    .quote{
+        font-size: 1.1rem;
+    }
+
+    .author{
+        margin-top: 2rem;
+    }
+
+}
 
 .card-body{
     display: flex;
@@ -33,7 +52,7 @@
     padding: 0 1rem;
     margin-bottom:1rem ;
     font-size: 1.2rem;
-
+    line-height: 1.5;
 }
 .author{
     justify-content: right;
@@ -121,4 +140,32 @@
 @keyframes spin {
 0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+@media (max-width: 480px){
+
+    .card{
+        width: 90%;
+        margin-top: 2rem;
+        padding: 1rem;
+    }
+
+    .card-header{
+        font-size: 1.3rem;
+    }
+
+    .quote{
+        font-size: 1rem;
+        padding: 0;
+    }
+
+    .author{
+        font-size: 0.9rem;
+    }
+
+    #newQoutBtn{
+        width: 7rem;
+        height: 3rem;
+        font-size: 1rem;
+    }
+
 }
