@@ -7,6 +7,12 @@ html, body {
 * {
     box-sizing: border-box;
 }
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
 .card {
     width: 90%;
     max-width: 600px;
