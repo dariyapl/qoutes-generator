@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/qoutes-generator/static/css/main.f8f6dbc7.css",
+    "main.js": "/qoutes-generator/static/js/main.0dbe3775.js",
+    "index.html": "/qoutes-generator/index.html",
+    "main.f8f6dbc7.css.map": "/qoutes-generator/static/css/main.f8f6dbc7.css.map",
+    "main.0dbe3775.js.map": "/qoutes-generator/static/js/main.0dbe3775.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f8f6dbc7.css",
+    "static/js/main.0dbe3775.js"
+  ]
+}
